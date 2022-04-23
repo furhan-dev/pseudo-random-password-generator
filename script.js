@@ -84,7 +84,7 @@ function getPasswordCriteria() {
 /**
  * 
  * @param {string} passwordLength the length of the password to create
- * @param {object} criteria user's character preferences
+ * @param {object} criteria user's password criteria
  * @returns {string} pseudo randomly generated password
  */
 function createPseudoRandomPassword(passwordLength = 128, criteria) {
@@ -124,7 +124,7 @@ function getRandomCharFromString(s) {
 }
 
 /**
- * Check if pseudo randomly generated password meets user's character criteria 
+ * Check if pseudo randomly generated password meets user's password criteria 
  * @param {string} password generated password to validate
  * @param {object} criteria object encapsulating user's criteria
  * @returns {boolean} true if valid, false otherwise
